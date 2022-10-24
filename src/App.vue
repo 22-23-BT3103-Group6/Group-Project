@@ -1,14 +1,16 @@
 <template>
   <HeadLine/>
+
 </template>
 
 <script>
 import HeadLine from '@/components/HeadLine.vue'
 
+
 export default {
   name: 'App',
   components: {
-    HeadLine
+    HeadLine,
   }
 }
 </script>
