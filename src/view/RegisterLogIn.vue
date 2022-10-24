@@ -16,7 +16,7 @@ import * as firebaseui from 'firebaseui'
 //import 'firebaseui/dist/firebaseui.css'
 
 export default {
-    name:"Login",
+    name:"SignIn",
 
     mounted() {
         //calling the ui instance
@@ -28,7 +28,7 @@ export default {
         }
 
         var uiConfig = {
-            signInSuccessUrl: '/home',
+            signInSuccessUrl: '/',
             signInOptions: [
                 firebase.auth.GoogleAuthProvider.PROVIDER_ID,
                 //firebase.auth.EmailAuthProvider.PROVIDER_ID,
