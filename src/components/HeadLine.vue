@@ -17,10 +17,16 @@
 
     <div class = menu>
       <div class = "nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About Us</router-link> |
-      <router-link to="/latest">Latest Photograph</router-link> 
-    </div>
+        <router-link to="/">Home</router-link> |
+        <router-link to="/about">About Us</router-link> |
+        <router-link to="/latest">Latest Photograph</router-link> 
+      </div>
+      <div class="search">
+            <form class="parent">
+                <input type="text" class="search" placeholder="search">
+                <button>Search</button>
+            </form>
+      </div>
     </div>
     
   </div>
@@ -91,6 +97,30 @@ export default {
 .nav a:hover{        
     border-bottom: 2px solid seagreen;
     color: seagreen;
+}
+
+
+.search{
+    margin-left: 10px;
+    width: 300px;
+    height: 50px;
+    float: right;
+}
+
+.search input{
+    width: 200px;
+    height: 30px;
+    border: 2px solid grey;
+    margin-top: 8px;
+    color: gray;
+    font-size: 13px;
+    float: left;
+}
+.search button{
+    width: 60px;
+    height: 34px;
+    margin-top: 8px;
+    float:right;
 }
 </style>
 

@@ -1,17 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import SignIn from '@/components/SignIn.vue'
-import HomePage from '@/views/HomePage.vue'
+//import HomePage from '@/views/HomePage.vue'
 import AboutUs from '@/components/AboutUs.vue'
-import LatestPhotograph from '@/views/LatestPhotograph.vue'
+//import LatestPhotograph from '@/views/LatestPhotograph.vue'
 
 
 
 const routes = [
-  {
-    path: "/",
-    name: "HomePage",
-    component: HomePage,
-  },
+//   {
+//     path: "/",
+//     name: "HomePage",
+//     component: HomePage,
+//   },
 
   {
     path: '/signin',
@@ -24,11 +24,11 @@ const routes = [
     component: AboutUs
   }
   ,
-  {
-    path: '/latest',
-    name: 'LatestPhotograph',
-    component: LatestPhotograph
-  }
+//   {
+//     path: '/latest',
+//     name: 'LatestPhotograph',
+//     component: LatestPhotograph
+//   }
 ]
 
 const router = createRouter({
