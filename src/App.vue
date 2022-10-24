@@ -1,4 +1,32 @@
+<<<<<<< HEAD
 <template>
+  <HeadLine/>
+</template>
+
+<script>
+import HeadLine from '@/components/HeadLine.vue'
+
+export default {
+  name: 'App',
+  components: {
+    HeadLine
+  }
+}
+</script>
+
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
+=======
+<template>
+<<<<<<< HEAD
     <HeadLine/>
     <div id = "left">
     <h2 id = "select1"><strong>Select Payment Method </strong></h2>
@@ -31,16 +59,30 @@
       <h2 id = "summary"><strong>Summary </strong></h2>
     </div>
 
+=======
+  <HeadLine/>
+  <HomePage/>
+>>>>>>> af9e462d2fddc69304eea4f075135cfd58def8cf
 </template>
 
 <script>
 import HeadLine from '@/components/HeadLine.vue'
+import HomePage from '@/view/HomePage.vue'
 
+<<<<<<< HEAD
 export default{
     name: "App",
     components:{
         HeadLine,
     },
+=======
+export default {
+  name: 'App',
+  components: {
+    HeadLine,
+    HomePage
+  }
+>>>>>>> af9e462d2fddc69304eea4f075135cfd58def8cf
 }
 </script>
 
@@ -163,3 +205,4 @@ export default{
   text-align: left;
 }
 </style>
+>>>>>>> 91dc93f21f1e27bdec35857c02b775c87f995683
