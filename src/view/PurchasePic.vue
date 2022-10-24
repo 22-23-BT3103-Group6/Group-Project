@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <template>
     <HeadLine/>
     <div id = "left">
@@ -164,20 +163,3 @@ export default{
   text-align: left;
 }
 </style>
-
-=======
-<template>
-    <HeadLine/>
-</template>
-
-<script>
-import HeadLine from '@/components/HeadLine.vue'
-
-export default{
-    name: "PurchasePic",
-    components:{
-        HeadLine,
-    },
-}
-</script>
->>>>>>> af9e462d2fddc69304eea4f075135cfd58def8cf
