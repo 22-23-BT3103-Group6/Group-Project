@@ -57,13 +57,14 @@ export default {
         }
 
 .pagetitle {
-      width: 80%;
-      font-weight: bold;
-      font-size: 24px;
-      height: 100px;
-      display: flex;
-      align-items: center;
-      padding-left: 30px;
+    font-family: Helvetica;
+    width: 80%;
+    font-weight: bold;
+    font-size: 24px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
     }
 
 
@@ -73,6 +74,7 @@ export default {
   background-color: #f9beaf
 }
 .nav{
+  font-family: Helvetica;
   margin-left: 15px;
   height: 50px;
   line-height:50px;
@@ -87,12 +89,18 @@ export default {
 
 
 .profile{
+    font-family: Helvetica;
     margin-left: 10px;
     width: 300px;
     height: 50px;
     font-size: 20px;
     float: right;
     line-height:50px;
+}
+
+.profile a:hover{
+  border-bottom: 2px solid grey;
+  color: grey;
 }
 
 
