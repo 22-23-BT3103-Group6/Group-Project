@@ -70,7 +70,7 @@ export default {
 
 .menu{
   height: 50px;
-  background-color: #FAF0E6	
+  background-color: #f9beaf
 }
 .nav{
   margin-left: 15px;
@@ -90,8 +90,11 @@ export default {
     margin-left: 10px;
     width: 300px;
     height: 50px;
+    font-size: 20px;
     float: right;
+    line-height:50px;
 }
+
 
 
 </style>
