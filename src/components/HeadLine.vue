@@ -1,67 +1,8 @@
-<<<<<<< HEAD
-<template>
-  <div class="layout">
-    <header>
-        <div class="pagetitle">
-            <h2 class="title"> Photographic Society of South East Asia </h2>
-        </div>
-
-        <div class = "user-profile">
-          <div v-if="user">
-          </div>
-
-          <div v-else>
-            <router-link to="/login">Log In</router-link> |
-            <router-link to="/register">Register</router-link> 
-          </div>
-        </div>
-
-    </header>
-  </div>
-</template>
-
-<script>
-import { getAuth, onAuthStateChanged } from "firebase/auth";
-
-export default {
-    name: 'LayOut',
-
-    data() {
-        return {
-            user:false,
-        }
-    },
-
-    mounted(){
-      const auth = getAuth();
-      onAuthStateChanged(auth, (user) => {
-        if(user) {
-          this.user = user;
-        }
-    })
-  }
-
-}
-</script>
-
-<style>
-
-</style>
-=======
 <template>
   <div class="headline">
     <header>
         <div class="pagetitle">
             <h2 class="title"> Photographic Society of South East Asia </h2>
-        </div>
-
-        <div class = "profile">
-          <div v-if="user">
-          </div>
-
-          <div v-else>
-            <router-link to="/signin">Sign in/Register</router-link>
-          </div>
         </div>
     </header>
 
@@ -71,11 +12,13 @@ export default {
         <router-link to="/about">About Us</router-link> |
         <router-link to="/latest">Latest Photograph</router-link> 
       </div>
-      <div class="search">
-            <form class="parent">
-                <input type="text" class="search" placeholder="search">
-                <button>Search</button>
-            </form>
+      <div class="profile">
+            <div v-if="user">
+          </div>
+
+          <div v-else>
+            <router-link to="/signin">Sign in/Register</router-link>
+          </div>
       </div>
     </div>
     
@@ -123,14 +66,7 @@ export default {
       padding-left: 30px;
     }
 
-.profile {
-  position: absolute;
-  display: flex;
-  right: 0;
-  top: 10px;
-  margin: 10px;
-  float: right;
-}
+
 
 .menu{
   height: 50px;
@@ -150,28 +86,13 @@ export default {
 }
 
 
-.search{
+.profile{
     margin-left: 10px;
     width: 300px;
     height: 50px;
     float: right;
 }
 
-.search input{
-    width: 200px;
-    height: 30px;
-    border: 2px solid grey;
-    margin-top: 8px;
-    color: gray;
-    font-size: 13px;
-    float: left;
-}
-.search button{
-    width: 60px;
-    height: 34px;
-    margin-top: 8px;
-    float:right;
-}
+
 </style>
 
->>>>>>> 91dc93f21f1e27bdec35857c02b775c87f995683
