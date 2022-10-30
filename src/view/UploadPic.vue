@@ -69,7 +69,7 @@ export default {
           storage,
           "files/" + this.$store.state.user.uid + "/" + this.fileName
         );
-        const res = await addDoc(collection(db, "blogs"), {
+        const res = await addDoc(collection(db, "files"), {
           author: this.$store.state.username,
           authorId: this.$store.state.user.uid,
           location: this.location,
@@ -79,7 +79,7 @@ export default {
           tag: this.tag,
           date: Timestamp.fromDate(new Date()),
           photo:
-            "blogs/" + this.$store.state.user.uid + "/" + this.fileName,
+            "files/" + this.$store.state.user.uid + "/" + this.fileName,
         });
         await setDoc(
           doc(db, "users/" + this.$store.state.user.uid + "/files", res.id),
@@ -87,7 +87,7 @@ export default {
             id: res.id,
           }
         );
-        this.$router.push({ name: "indivBlogPage", params: { id: res.id } });
+        this.$router.push({ name: "indivFilePage", params: { id: res.id } });
       } catch (e) {
         console.error(e);
         alert("Cannot upload image!");
