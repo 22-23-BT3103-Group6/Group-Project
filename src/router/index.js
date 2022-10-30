@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import SignIn from '@/components/SignIn.vue'
 import HomePage from '@/view/HomePage.vue'
 import AboutUs from '@/components/AboutUs.vue'
-//import LatestPhotograph from '@/views/LatestPhotograph.vue'
+import LatestPhotograph from '@/view/LatestPhotograph.vue'
 
 
 
@@ -24,11 +24,11 @@ const routes = [
     component: AboutUs
   }
   ,
-//   {
-//     path: '/latest',
-//     name: 'LatestPhotograph',
-//     component: LatestPhotograph
-//   }
+  {
+    path: '/latest',
+    name: 'LatestPhotograph',
+    component: LatestPhotograph
+  }
 ]
 
 const router = createRouter({
