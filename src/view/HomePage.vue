@@ -70,8 +70,13 @@
     </footer>
   </template>
   
+  
   <script setup>
+<<<<<<< HEAD
   import HeadLine from '@/components/HeadLine.vue'
+=======
+     import HeadLine from '@/components/HeadLine.vue'
+>>>>>>> e4ee66fcbfcba5c62ec2056612fb3889802d9f3f
   const list = [
       {
           groupingName: 'Trending Photography',

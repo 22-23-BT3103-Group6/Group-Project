@@ -1,5 +1,9 @@
 <template>
   <router-view/>
+<<<<<<< HEAD
+=======
+  
+>>>>>>> e4ee66fcbfcba5c62ec2056612fb3889802d9f3f
 </template>
 
 <script>
