@@ -1,15 +1,11 @@
 <template>
-  <HeadLine/>
+  <router-view/>
 </template>
 
 <script>
-import HeadLine from '@/components/HeadLine.vue'
 
 export default {
   name: 'App',
-  components: {
-    HeadLine
-  }
 }
 </script>
 
