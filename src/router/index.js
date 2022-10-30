@@ -3,6 +3,7 @@ import SignIn from '@/view/RegisterLogIn.vue'
 import HomePage from '@/view/HomePage.vue'
 import AboutUs from '@/components/AboutUs.vue'
 import LatestPhotograph from '@/view/LatestPhotograph.vue'
+import EditProfile from '@/components/EditProfile.vue'
 
 
 
@@ -28,6 +29,12 @@ const routes = [
     path: '/latest',
     name: 'LatestPhotograph',
     component: LatestPhotograph
+  }
+  ,
+  {
+    path:'/profile',
+    name: 'EditProfile',
+    component: EditProfile
   }
 ]
 
