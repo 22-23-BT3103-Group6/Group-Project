@@ -71,8 +71,7 @@
   </template>
   
   <script setup>
-    import HeadLine from '@/components/HeadLine.vue'
-  
+  import HeadLine from '@/components/HeadLine.vue'
   const list = [
       {
           groupingName: 'Trending Photography',
