@@ -1,4 +1,5 @@
 <template>
+<HeadLine/>
     <div class="index">
         <div class="top-search">
             <div>
@@ -70,6 +71,7 @@
   </template>
   
   <script setup>
+  import HeadLine from '@/components/HeadLine.vue'
   const list = [
       {
           groupingName: 'Trending Photography',

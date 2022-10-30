@@ -1,18 +1,11 @@
 <template>
-  <HeadLine/>
-  <HomePage/>
+  <router-view/>
 </template>
 
 <script>
-import HeadLine from '@/components/HeadLine.vue'
-import HomePage from '@/view/HomePage.vue'
 
 export default {
   name: 'App',
-  components: {
-    HeadLine,
-    HomePage,
-  }
 }
 </script>
 
