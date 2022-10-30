@@ -50,17 +50,8 @@ import HeadLine from '@/components/HeadLine.vue'
               },
           ]
       },
-      
-  
   ]
   </script>
-
-// export default{
-    // name: "LatestPhoto",
-    // components:{
-        // HeadLine,
-    // },
-// }
   
 <style lang="less" scoped>
 .blog-list {
