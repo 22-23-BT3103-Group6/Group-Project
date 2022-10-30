@@ -1,59 +1,63 @@
 <template>
   <HeadLine/>
-  
-
   <div class="blog-list">
     <div class="blog-list-grouping" v-for="item in list" :key="item.id">
       <div class="grouping-name">
         {{ item.groupingName }}
       </div>
       <div class="blog-list-main">
-        <div class="blog-list-item" v-for="info in item.child" :key="info.id">
-          <div class="photo-Name">{{ info.photoName }}</div>
-          <div class="read-more">Read More</div>
+        <div class="blog-list-item" v-for="info in item.child" :key="info.id"
+               :style="{background: 'url(' + info.img + ')'}">
+        <div class="photo-name">{{ info.photoName }}</div>
+        <div class="read-more">Read More</div>
         </div>
       </div>
     </div>
   </div>
-  <MyFooter/>
 
 </template>
 
 <script setup>
-    import HeadLine from '@/components/HeadLine.vue';
-    import MyFooter from '@/components/MyFooter.vue';
+import HeadLine from '@/components/HeadLine.vue'
   const list = [
       {
           groupingName: 'Latest Photographs',
           id: 1,
           child: [
               {
-                  photoName: 'Waves',
-                  id: 1,
+                  photoName: 'Sea Shore',
+                  id: 1-1,
+                  img: require('../assets/image16.jpeg')
               },
               {
-                  photoName: 'The Sea',
-                  id: 2
+                  photoName: 'Morocco',
+                  id: 1-2,
+                  img: require('../assets/image14.jpeg'),       
               },
               {
-                  photoName: 'The Myth',
-                  id: 3
-              },
-              {
-                  photoName: 'The Myth',
-                  id: 4
-              },
-              {
-                  photoName: 'The Myth',
-                  id: 5
+                  photoName: 'The Lake',
+                  id: 1-3,
+                  img: require('../assets/image15.jpeg')
               },
               {
                   photoName: 'The Myth',
-                  id: 6
+                  id: 1-4,
+                  img: require('../assets/image12.jpeg')
+              },
+              {
+                  photoName: 'The Myth',
+                  id: 1-5,
+                  img: require('../assets/image3.png')
+              },
+              {
+                  photoName: 'The Myth',
+                  id: 1-6,
+                  img: require('../assets/image13.jpeg')
               },
           ]
       },
-  ]
+    ]
+
   </script>
   
 <style lang="less" scoped>
@@ -70,12 +74,14 @@
               .blog-list-main {
                   display: flex;
                   flex-wrap: wrap;
+                  .blog-list-item.child.1.image{
+                    background: url(../assets/image4.png);
+                  }
                   .blog-list-item {
-                      height: 200px;
+                      height: 120px;
                       width: 380px;
                       margin: 10px;
-                      background: url(../assets/image1.png);
-                      /* padding-bottom: 10px; */
+                    //   padding-bottom: 10px;
                       padding-top: 178px;
                       padding-left: 30px;
                       color: #fff;
