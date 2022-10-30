@@ -9,7 +9,7 @@
               <img id = "touxiang" src = "@/assets/picture.png" v-on:click="menuToggle();">
           <div id = "touxiang_menu">
             <ul>
-              <li><a href="@/components/Profile.vue">My Profile</a></li>
+              <li><a href="/profile">My Profile</a></li>
               <li><a href="#">Portfolio</a></li>
               <li><a href="#">New Post</a></li>
               <li><a href='@/components/SignOut.vue'>Sign Out</a></li>
@@ -46,7 +46,7 @@
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 
 export default {
-    name: 'LayOut',
+    name: 'HeadLine',
 
     data() {
         return {
