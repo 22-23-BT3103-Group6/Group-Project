@@ -1,5 +1,5 @@
 <template>
-<HeadLine/>
+    <HeadLine/>
     <main class="Container">
         <div class="about_us">
             <h1>About Us</h1>
@@ -9,15 +9,17 @@
             </p>
         </div>
     </main>
+    <MyFooter/>
 </template>
 
 <script>
-import HeadLine from '@/components/HeadLine.vue'
-
+import HeadLine from '@/components/HeadLine.vue';
+import MyFooter from './MyFooter.vue';
 export default{
     name:'AboutUs',
     components: {
         HeadLine,
+        MyFooter
     }
 }
 </script>

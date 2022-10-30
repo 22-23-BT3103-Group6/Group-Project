@@ -1,5 +1,6 @@
 <template>
   <HeadLine/>
+  
 
   <div class="blog-list">
     <div class="blog-list-grouping" v-for="item in list" :key="item.id">
@@ -14,11 +15,13 @@
       </div>
     </div>
   </div>
+  <MyFooter/>
 
 </template>
 
 <script setup>
-import HeadLine from '@/components/HeadLine.vue'
+    import HeadLine from '@/components/HeadLine.vue';
+    import MyFooter from '@/components/MyFooter.vue';
   const list = [
       {
           groupingName: 'Latest Photographs',
