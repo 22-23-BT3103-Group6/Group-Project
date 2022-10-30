@@ -1,4 +1,5 @@
 <template>
+<HeadLine/>
     <main class="Container">
         <div>
             <h1>About Us</h1>
@@ -9,6 +10,17 @@
         </div>
     </main>
 </template>
+
+<script>
+import HeadLine from '@/components/HeadLine.vue'
+
+export default{
+    name:'AboutUs',
+    components: {
+        HeadLine,
+    }
+}
+</script>
 
 <style scoped>
 
